@@ -146,6 +146,29 @@ h4 {
   width: 90%;
 }
 
+/* facts */
+
+.fact-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px;
+  margin-top: 40px;
+}
+
+.fact-box {
+  width: 200px;
+  margin: 0 auto;
+  border: 2px solid #FF900E;
+  text-align: center;
+  padding: 30px 0;
+  border-radius: 5px;
+}
+
+.fact-box:hover {
+  scale: .8;
+}
+
+
 /* == */
 @media only screen and (max-width: 600px) {
 
@@ -210,6 +233,13 @@ h4 {
   }
 
   .features-right {
+    text-align: center;
+  }
+
+  .fact-items {
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+    padding: 0 30px;
     text-align: center;
   }
 
